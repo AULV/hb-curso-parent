@@ -12,9 +12,9 @@
 	<!-- Datasource -->
     <bean id="BitacoraDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName"><value>com.mysql.jdbc.Driver</value></property>
-        <property name="url"><value>jdbc:mysql://localhost:3306/hb-bit</value></property>
+        <property name="url"><value>jdbc:mysql://localhost:3306/hb_bit</value></property>
         <property name="username"><value>bitacora</value></property>
-        <property name="password"><value>bitacora</value></property>
+        <property name="password"><value>12345678</value></property>
         <property name="validationQuery"><value>SELECT 1 </value></property>
         <property name="logAbandoned"><value>true</value></property>
         <property name="maxActive"><value>75</value></property>
@@ -55,6 +55,10 @@
     </bean> 
 	<!-- /SessionFactory -->
 	
-	
+	<!-- DAO -->
+	<bean id="EventoDao" class="mx.habil.curso.model.dao.impl.EventoDaoImpl">
+        <property name="sessionFactory" ref="BitacoraSessionFactory" />
+    </bean>
+	<!-- /DAO -->
 	
 </beans>

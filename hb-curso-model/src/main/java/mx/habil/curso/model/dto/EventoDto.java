@@ -49,6 +49,6 @@ public class EventoDto extends HabilDto{
 	private @Getter @Setter String comentarios;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="FECEVT", nullable=false)
+	@Column(name="FECREG", nullable=false)
 	private @Getter @Setter Date fechaRegistro;
 }

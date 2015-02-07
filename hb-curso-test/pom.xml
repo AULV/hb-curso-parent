@@ -19,5 +19,33 @@
 		</plugin>
 	</plugins>
    </build>
+   <dependencies>
+   		<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>mx.habil.curso</groupId>
+            <artifactId>hb-curso-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mx.habil.curso</groupId>
+            <artifactId>hb-curso-model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mx.habil.curso</groupId>
+            <artifactId>hb-curso-business</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+   </dependencies>
    
 </project>
