@@ -19,5 +19,6 @@
   	<module>hb-curso-commons</module>
   	<module>hb-curso-model</module>
   	<module>hb-curso-business</module>
+  	<module>hb-curso-test</module>
   </modules>
 </project>
