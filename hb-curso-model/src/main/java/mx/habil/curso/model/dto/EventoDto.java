@@ -13,11 +13,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import lombok.Getter;
 import lombok.Setter;
 import mx.habil.support.HabilDto;
+
+import org.hibernate.annotations.GenericGenerator;
 
 
 @Entity
@@ -28,27 +28,29 @@ public class EventoDto extends HabilDto{
 	@Id
 	@GeneratedValue(generator="uuid")
 	@GenericGenerator(name="uuid", strategy="uuid2")
-	@Column(name="ID_EVT", unique=true, nullable=false, length=37)
+	@Column(name="ID_EVT", unique=true, length=37)
 	private @Getter @Setter String id;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="FECEVT", nullable=false)
+	@Column(name="FECEVT")	
 	private @Getter @Setter Date fechaEvento;
 	
-	@Column(name="EVT", length=80, nullable=false)
+
+	@Column(name="EVT", length=80)
 	private @Getter @Setter String evento;
 	
-	@Column(name="CLASE", length=80, nullable=false)
+	@Column(name="CLASE", length=80)
 	private @Getter @Setter String clase;
 	
-	@Column(name="SUBCLASE", length=80, nullable=false)
+	@Column(name="SUBCLASE", length=80)
 	private @Getter @Setter String subClase;
 	
-	@Lob @Basic(fetch=FetchType.LAZY)
-	@Column(name="COMENTARIOS", nullable=true)
+	@Lob 
+	@Basic(fetch=FetchType.LAZY)
+	@Column(name="COMENTARIOS")
 	private @Getter @Setter String comentarios;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="FECREG", nullable=false)
+	@Column(name="FECREG", updatable=false)
 	private @Getter @Setter Date fechaRegistro;
 }

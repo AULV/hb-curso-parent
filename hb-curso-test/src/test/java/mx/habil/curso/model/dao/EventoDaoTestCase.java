@@ -18,7 +18,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 			"classpath:mx/habil/curso/commons/xml/commons.application.context.xml",
 			"classpath:mx/habil/curso/model/xml/model.application.context.xml"
 		})
-
 public class EventoDaoTestCase {
 	@Autowired EventoDao eventoDao;
 	
@@ -45,8 +44,10 @@ public class EventoDaoTestCase {
 	@Test public void testEliminarEvento(){
 		log.debug("inicio");
 		EventoDto eventoDto = new EventoDto();
-		eventoDto.setId("6dee6ac0-f004-4bc5-ac8d-53e469c31c92");
+		eventoDto.setId("e482ddaf-5f01-4b63-aae0-19e1ac7c1215");
+		
 		eventoDao.delete(eventoDto);
+		
 		log.debug("fin");
 	}
 }
