@@ -19,4 +19,26 @@
 		</plugin>
 	</plugins>
    </build>
+   <dependencies>
+        <dependency>
+          <groupId>mx.habil.framework</groupId>
+          <artifactId>habil</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>${org.projectlombok.version}</version>
+		</dependency>
+		<dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>${commons-io.version}</version>
+		</dependency>
+    </dependencies>
 </project>

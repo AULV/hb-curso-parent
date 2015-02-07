@@ -8,6 +8,9 @@
   <description>Curso de spring mvc en hábil</description>
   <properties>
     <jdk.version>1.7</jdk.version>
+    <org.projectlombok.version>1.14.8</org.projectlombok.version>
+    <log4j.version>1.2.17</log4j.version>
+    <commons-io.version>2.4</commons-io.version>
   </properties>
     
   <modules>
