@@ -19,4 +19,17 @@
 		</plugin>
 	</plugins>
    </build>
+   <dependencies>
+    	<dependency>
+            <groupId>mx.habil.curso</groupId>
+            <artifactId>hb-curso-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${org.hibernate.version}</version>
+        </dependency>
+   </dependencies>
 </project>
