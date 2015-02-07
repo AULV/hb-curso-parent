@@ -27,7 +27,7 @@ public class EventoDaoTestCase {
 		log.debug("fin");
 	}
 	
-	@Test public void testGuardarBitacora(){
+	@Test public void testGuardarEvento(){
 		log.debug("inicio");
 		Date now = new Date();
 		EventoDto eventoDto = new EventoDto();
@@ -39,6 +39,14 @@ public class EventoDaoTestCase {
 		eventoDto.setFechaRegistro(now);
 		
 		eventoDao.save(eventoDto);
+		log.debug("fin");
+	}
+	
+	@Test public void testEliminarEvento(){
+		log.debug("inicio");
+		EventoDto eventoDto = new EventoDto();
+		eventoDto.setId("6dee6ac0-f004-4bc5-ac8d-53e469c31c92");
+		eventoDao.delete(eventoDto);
 		log.debug("fin");
 	}
 }
