@@ -116,3 +116,22 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
     </bean>
 
 Ver que estamos ocupando H2 en modo **Oracle**, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
+
+
+# Probar los servicios web de la aplicación
+
+Con las siguientes indicaciones podremos probar los servicios REST de la aplicación
+
+## Probar el recuperar usuario por su clave
+
+Para probar este método debemos tener un navegador abierto, recomiendo las pruebas sean realizadas
+a través de firefox, si colocamos la siguiente url en el navegador cambiando la variable
+**{clave del usuario}** por la de un usuario existente en la base de datos deberemos obtener la información del usuario.
+
+    http://localhost:8080/hb-curso/protected/service/usuario/**{clave del usuario}**
+
+Es importante que previamente hayamos creado usuarios dentro de la base de datos, demos por
+hecho que se ha creado el usuario dchavez, si quisieramos recuperar su información sería con
+la siguiente url
+
+    http://localhost:8080/hb-curso/protected/service/usuario/dchavez
