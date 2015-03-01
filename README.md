@@ -42,6 +42,38 @@ http://www.habil.mx
 17.- Ejecución de la prueba unitaria del proyecto hb-curso-parent para validar conectividad a la BBDD
 
 
+# Configuración de los proyectos para compilación con la JDK en la versión 7
+
+Para que los proyectos sean compilados en la versión 7 de java debemos
+
+## Agregar la versión del la JDK a utilizar
+
+En el archivo pom.xml del parent debemos definir como propiedad la versión de compilación
+a utilizar
+
+    <jdk.version>1.7</jdk.version>
+
+## Configurar los proyectos para compilar en la versión
+
+En los archivos pom.xml del commons, model, business y fron debemos agregar el siguiente build
+
+    <build>
+      <plugins>
+        <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    <version>2.3.2</version>
+			    <configuration>
+            <source>${jdk.version}</source>
+            <target>${jdk.version}</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
+Después de agregar esta configuración los proyectos marcaran un error, será necesario seleccionarlos
+dar click con el botón derecho y en el menú emergente dar click a "**Maven -> Update project ...**", con eso será suficiente para que los proyectos cambien su compilación a la versión 1.7
+
 # Configuración de la base de datos
 
     mysql>CREATE DATABASE hb_bit;
@@ -83,4 +115,4 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
       <property name="password" value="" />
     </bean>
 
-Ver que estamos ocupando H2 en modo Oracle, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
+Ver que estamos ocupando H2 en modo **Oracle**, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
