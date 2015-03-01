@@ -74,4 +74,13 @@ Debemos agregar la dependencia al pom.xml del model
       <version>${h2.version}</version>
     </dependency>
 
-Debemos configurar el DataSource para crear/usar la base de datos embebida
+Debemos configurar el data source en el archivo model.application.context.xml para crear/usar la base de datos embebida
+
+    <bean id="BitacoraDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+      <property name="driverClassName" value="org.h2.Driver" />
+      <property name="url" value="jdbc:h2:/opt/db/h2/hb_bit;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=2" />
+      <property name="username" value="sa" />
+      <property name="password" value="" />
+    </bean>
+
+Ver que estamos ocupando H2 en modo Oracle, con el objetivo de no tener problemas al momento de ocupar el manejador.
