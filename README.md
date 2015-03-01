@@ -83,4 +83,4 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
       <property name="password" value="" />
     </bean>
 
-Ver que estamos ocupando H2 en modo Oracle, con el objetivo de no tener problemas al momento de ocupar el manejador.
+Ver que estamos ocupando H2 en modo Oracle, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
