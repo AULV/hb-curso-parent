@@ -65,3 +65,13 @@ utilizar la base de datos embebida H2, para ocuparla debemos tener creada la car
 Debemos agregar al pom.xml del parent la versión del H2 a utilizar
 
     <h2.version>1.4.185</h2.version>
+
+Debemos agregar la dependencia al pom.xml del model
+
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>${h2.version}</version>
+    </dependency>
+
+Debemos configurar el DataSource para crear/usar la base de datos embebida
