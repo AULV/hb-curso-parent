@@ -59,7 +59,7 @@ En los archivos pom.xml del commons, model, business y fron debemos agregar el s
 
     <build>
       <plugins>
-        <plugin>
+        <plugin> 
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-compiler-plugin</artifactId>
 			    <version>2.3.2</version>
