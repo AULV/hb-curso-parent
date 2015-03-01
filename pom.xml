@@ -17,6 +17,7 @@
     <mysql.version>5.1.33</mysql.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <junit.version>4.11</junit.version>
+    <h2.version>1.4.185</h2.version>
   </properties>
     
   <modules>
