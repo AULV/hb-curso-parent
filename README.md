@@ -128,7 +128,7 @@ Para probar este método debemos tener un navegador abierto, recomiendo las prue
 a través de firefox, si colocamos la siguiente url en el navegador cambiando la variable
 **{clave del usuario}** por la de un usuario existente en la base de datos deberemos obtener la información del usuario.
 
-    http://localhost:8080/hb-curso/protected/service/usuario/**{clave del usuario}**
+    http://localhost:8080/hb-curso/protected/service/usuario/{clave del usuario}
 
 Es importante que previamente hayamos creado usuarios dentro de la base de datos, demos por
 hecho que se ha creado el usuario dchavez, si quisieramos recuperar su información sería con
