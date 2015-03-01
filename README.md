@@ -118,6 +118,24 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
 Ver que estamos ocupando H2 en modo **Oracle**, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
 
 
+#Explorar la base de daros embebida
+
+Para explorar la base de datos embebida será importante que la aplicación web se esté ejecutando, una vez confirmada la ejecución debemos ingresar a la siguiente url
+
+    http://localhost:11111
+
+En el formulario que se nos presenta debemos capturar la siguiente información
+
+    Configuraciones guardadas: Generic H2 (Embedded)
+    Nombre de la configuración: Generic H2 (Embedded)
+    Controlador: org.h2.Driver
+    URL JDBC: jdbc:h2:/opt/db/h2/hb_bit;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=2
+    Nombre de usuario: sa
+    Contraseña:
+
+Un vez capturados, debemos dar click al botón **Conectar**. Listo, podremos navegar a través
+de la base de datos.
+
 # Probar los servicios REST de la aplicación
 
 Con las siguientes indicaciones podremos probar los servicios REST de la aplicación
