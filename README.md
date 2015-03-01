@@ -50,6 +50,6 @@ http://www.habil.mx
 
   mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
 
-  mysql>FLUSH PRIVILEGES;
+  $mysql>FLUSH PRIVILEGES;
 
 Con esto podemos correr las pruebas unitarias
