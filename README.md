@@ -44,12 +44,12 @@ http://www.habil.mx
 
 # Configuración de la base de datos
 
-  mysql>CREATE DATABASE hb_bit;
+    mysql>CREATE DATABASE hb_bit;
 
-  mysql>CREATE USER ' bitacora'@'localhost' IDENTIFIED BY '12345678';
+    mysql>CREATE USER ' bitacora'@'localhost' IDENTIFIED BY '12345678';
 
-  mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
+    mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
 
-  $mysql>FLUSH PRIVILEGES;
+    mysql>FLUSH PRIVILEGES;
 
-Con esto podemos correr las pruebas unitarias
+Con esto podemos ejecutar las pruebas unitarias de la sesión 1
