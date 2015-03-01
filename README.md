@@ -40,3 +40,10 @@ http://www.habil.mx
 16.- Creación de la base de datos y usuario en MySQL
 
 17.- Ejecución de la prueba unitaria del proyecto hb-curso-parent para validar conectividad a la BBDD
+
+
+# Configuración de la base de datos
+  mysql>CREATE DATABASE hb_bit;
+  mysql>CREATE USER ' bitacora'@'localhost' IDENTIFIED BY '12345678';
+  mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
+  mysql>FLUSH PRIVILEGES;
