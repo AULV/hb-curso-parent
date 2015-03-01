@@ -177,5 +177,6 @@ Un ejemplo de la respuesta sería
 
 ##Porbar el guardar usuario
 
+Eso es todo por hoy :)
+
 curl -i -X POST -d "cveUsuario=mrojas" http://localhost:8080/hb-curso/protected/service/usuario
-curl -i -X GET http://localhost:8080/hb-curso/protected/service/usuario/dchavez
