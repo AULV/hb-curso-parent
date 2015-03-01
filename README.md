@@ -78,7 +78,7 @@ dar click con el botón derecho y en el menú emergente dar click a "**Maven -> 
 
     mysql>CREATE DATABASE hb_bit;
 
-    mysql>CREATE USER ' bitacora'@'localhost' IDENTIFIED BY '12345678';
+    mysql>CREATE USER 'bitacora'@'localhost' IDENTIFIED BY '12345678';
 
     mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
 
