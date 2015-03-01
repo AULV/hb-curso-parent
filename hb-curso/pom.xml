@@ -38,5 +38,10 @@
             <artifactId>hibernate-validator</artifactId>
             <version>${org.hibernate.validator.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${com.fasterxml.jackson.core.version}</version>
+        </dependency>
 	</dependencies>
 </project>

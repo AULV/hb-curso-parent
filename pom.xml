@@ -18,6 +18,7 @@
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <junit.version>4.11</junit.version>
     <h2.version>1.4.185</h2.version>
+    <com.fasterxml.jackson.core.version>2.4.3</com.fasterxml.jackson.core.version>
   </properties>
     
   <modules>

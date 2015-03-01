@@ -25,12 +25,12 @@ public class BitacoraAppService {
 				throw new HabilAppServiceException("La información del usuario a guardar no debe ser nula.");
 			}
 			
-			if(usuario.getCveUsuario()==null ||usuario.getCveUsuario().trim().isEmpty()){
-				throw new HabilAppServiceException("La clave del usuario a guardar, no debe ser nula.");
+			if(usuario.getCveUsuario()==null || usuario.getCveUsuario().trim().isEmpty()){
+				throw new HabilAppServiceException("La clave del usuario a guardar no debe ser nula.");
 			}
 			
-			if(usuario.getNombre()==null ||usuario.getNombre().trim().isEmpty()){
-				throw new HabilAppServiceException("El nombre del usuario a guardar, no debe ser nulo.");
+			if(usuario.getNombre()==null || usuario.getNombre().trim().isEmpty()){
+				throw new HabilAppServiceException("El nombre del usuario a guardar no debe ser nulo.");
 			}
 		}
 		
@@ -44,5 +44,20 @@ public class BitacoraAppService {
 		log.debug("fin");
 	}
 	
+	public UsuarioDto recuperaUsuarioPorClave(final String cveUsuario){
+		log.debug("inicio");
+		UsuarioDto result = null;
+		{//Validaciones
+			if(cveUsuario==null || cveUsuario.trim().isEmpty()){
+				throw new HabilAppServiceException("La clave del usuario a buscar no debe ser nula.");
+			}
+		}
+		
+		result = usuarioDao.recuperaPorCveUsuario(cveUsuario);
+		
+		log.debug("fin");
+		return result;
+		
+	}
 	
 }
