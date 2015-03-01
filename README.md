@@ -165,7 +165,15 @@ Un ejemplo de la respuesta sería
     Content-Type: application/json;charset=UTF-8
     Transfer-Encoding: chunked
     Date: Sun, 01 Mar 2015 08:41:58 GMT
-      {"id":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4","cveUsuario":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4","nombre":"Dorian","apPaterno":"Chavez","apMaterno":"Juarez","activo":true,"fechaRegistro":null}
+    {
+      "id":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4",
+      "cveUsuario":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4",
+      "nombre":"Dorian",
+      "apPaterno":"Chavez",
+      "apMaterno":"Juarez",
+      "activo":true,
+      "fechaRegistro":null
+    }
 
 ##Porbar el guardar usuario
 
