@@ -55,7 +55,7 @@ a utilizar
 
 ## Configurar los proyectos para compilar en la versión
 
-En los archivos pom.xml del commons, model, business y fron debemos agregar el siguiente build
+En los archivos pom.xml del commons, model, business y front debemos agregar el siguiente build
 
     <build>
       <plugins>
