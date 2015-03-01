@@ -7,7 +7,13 @@
         <dependent-module archiveName="hb-curso-business-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hb-curso-business/hb-curso-business">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="hb-curso-model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hb-curso-model/hb-curso-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="hb-curso-commons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hb-curso-commons/hb-curso-commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="habil-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/habil/habil">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="hb-curso"/>
