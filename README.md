@@ -44,6 +44,10 @@ http://www.habil.mx
 
 # Configuración de la base de datos
   mysql>CREATE DATABASE hb_bit;
+
   mysql>CREATE USER ' bitacora'@'localhost' IDENTIFIED BY '12345678';
+
   mysql>GRANT ALL ON hb_bit.* TO 'bitacora'@'localhost';
+
   mysql>FLUSH PRIVILEGES;
+  
