@@ -153,3 +153,21 @@ hecho que se ha creado el usuario dchavez, si quisieramos recuperar su informaci
 la siguiente url
 
     http://localhost:8080/hb-curso/protected/service/usuario/dchavez
+
+Otro mecanismo para invocar el servicio es usando la utilidad curl, el comando sería
+
+    curl -i -X GET http://localhost:8080/hb-curso/protected/service/usuario/dchavez
+
+Un ejemplo de la respuesta sería
+
+    HTTP/1.1 200 OK
+    Server: Apache-Coyote/1.1
+    Content-Type: application/json;charset=UTF-8
+    Transfer-Encoding: chunked
+    Date: Sun, 01 Mar 2015 08:41:58 GMT
+      {"id":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4","cveUsuario":"a28c4bed-3b18-4e37-8c56-6a58f6d889e4","nombre":"Dorian","apPaterno":"Chavez","apMaterno":"Juarez","activo":true,"fechaRegistro":null}
+
+##Porbar el guardar usuario
+
+curl -i -X POST -d "cveUsuario=mrojas" http://localhost:8080/hb-curso/protected/service/usuario
+curl -i -X GET http://localhost:8080/hb-curso/protected/service/usuario/dchavez

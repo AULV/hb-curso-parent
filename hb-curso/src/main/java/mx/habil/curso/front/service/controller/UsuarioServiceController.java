@@ -28,7 +28,7 @@ public class UsuarioServiceController {
 		ResponseEntity<?> result = null;
 		try{
 			facade.guardarUsuario(usuario);
-			result = new ResponseEntity<String>(HttpStatus.OK);
+			result = new ResponseEntity<String>("Se ha guardado correctamente el usuario de "+usuario.getNombre(), HttpStatus.OK);
 		}catch(Exception ex){
 			log.error(ex.getMessage(), ex);
 			result = new ResponseEntity<String>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
