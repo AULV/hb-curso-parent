@@ -25,5 +25,6 @@
   	<module>hb-curso-model</module>
   	<module>hb-curso-business</module>
   	<module>hb-curso-test</module>
+  	<module>hb-curso</module>
   </modules>
 </project>
