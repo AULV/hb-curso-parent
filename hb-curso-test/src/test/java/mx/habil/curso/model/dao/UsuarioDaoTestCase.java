@@ -42,5 +42,15 @@ public class UsuarioDaoTestCase {
 		log.debug("fin");
 	}
 	
+	@Test public void testRecuperaUsuarioPorCveUsuario(){
+		log.debug("inicio");
+		UsuarioDto usuario = usuarioDao.recuperaPorCveUsuario("dchavez");
+		log.debug(usuario);
+		if(usuario!=null){
+			log.debug("nombre:"+usuario.getNombre());
+		}
+		log.debug("fin");
+	}
+	
 	
 }
