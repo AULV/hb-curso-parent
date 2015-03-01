@@ -31,7 +31,7 @@ http://www.habil.mx
 
 12.- Creación del archivo .gitignore
 
-13.- Exceptuar */target/*
+13.- Exceptuar \*/target/\*
 
 14.- Descarga de los repositorios remotos habil y hb-curso-parent
 
