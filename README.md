@@ -60,7 +60,7 @@ Para trabajar sin necesidad de instalar un manejador de base de datos se ha deci
 utilizar la base de datos embebida H2, para ocuparla debemos tener creada la carpeta
 "**/opt/db/h2**" y ejecutar los siguientes pasos
 
-##Paso 1.- Agregar versión y dependencias
+##Agregar versión y dependencias
 
 Debemos agregar al pom.xml del parent la versión del H2 a utilizar
 
