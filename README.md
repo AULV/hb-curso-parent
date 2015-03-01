@@ -118,7 +118,7 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
 Ver que estamos ocupando H2 en modo **Oracle**, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
 
 
-# Probar los servicios web de la aplicación
+# Probar los servicios REST de la aplicación
 
 Con las siguientes indicaciones podremos probar los servicios REST de la aplicación
 
