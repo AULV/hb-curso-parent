@@ -53,3 +53,9 @@ http://www.habil.mx
     mysql>FLUSH PRIVILEGES;
 
 Con esto podemos ejecutar las pruebas unitarias de la sesión 1
+
+#Configuración de la base de datos embebida
+
+Para trabajar sin necesidad de instalar un manejador de base de datos se ha decidido
+utilizar la base de datos embebida H2, para ocuparla debemos tener creada la carpeta
+"**/opt/db/h2**"
