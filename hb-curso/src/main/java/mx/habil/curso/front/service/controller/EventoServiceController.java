@@ -1,4 +1,4 @@
-package mx.habil.curso.front.controller;
+package mx.habil.curso.front.service.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 

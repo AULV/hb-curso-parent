@@ -1,4 +1,4 @@
-package mx.habil.curso.front.controller;
+package mx.habil.curso.front.service.controller;
 
 import lombok.extern.apachecommons.CommonsLog;
 import mx.habil.curso.front.facade.BitacoraServiceFacade;
@@ -37,7 +37,7 @@ public class UsuarioServiceController {
 		return result;
 	}
 	
-	@RequestMapping(value="/${cveUsuario}", method = RequestMethod.GET)
+	@RequestMapping(value="/{cveUsuario}", method = RequestMethod.GET)
 	public ResponseEntity<?> recuperaUsuarioPorClave(@PathVariable String cveUsuario){
 		log.debug("inicio");
 		ResponseEntity<?> result = null;
