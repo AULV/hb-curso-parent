@@ -118,7 +118,7 @@ Debemos configurar el data source en el archivo model.application.context.xml pa
 Ver que estamos ocupando H2 en modo **Oracle**, con el objetivo de no tener problemas al momento de conectar la aplicación a Oracle.
 
 
-#Explorar la base de daros embebida
+#Explorar la base de datos embebida
 
 Para explorar la base de datos embebida será importante que la aplicación web se esté ejecutando, una vez confirmada la ejecución debemos ingresar a la siguiente url
 
